@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini AGI Quiz • Dobby</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="AI ethics & SentientAGI quiz powered by Dobby API" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">🤖 Mini AGI Quiz</div>
+      <div class="tag">Powered by Dobby</div>
+    </header>
+
+    <main class="card">
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar" style="width:0%"></div>
+      </div>
+
+      <section id="intro">
+        <h1>Welcome!</h1>
+        <p>Test your knowledge on AI ethics and Sentient projects.</p>
+        <div class="name-row">
+          <input id="name" placeholder="Enter your name" />
+          <button id="start-btn" class="primary">Start Quiz</button>
+        </div>
+      </section>
+
+      <section id="quiz" class="hidden">
+        <div class="meta">
+          <span id="q-count">Question 1 of 5</span>
+        </div>
+        <h2 id="question">Loading question…</h2>
+        <div id="options" class="options"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <div class="actions">
+          <button id="next-btn" class="primary" disabled>Next</button>
+        </div>
+      </section>
+
+      <section id="result" class="hidden">
+        <h2 id="score-text"></h2>
+        <p id="suggestion"></p>
+        <div class="links">
+          <a href="https://x.com/SentientAGI" target="_blank">SentientAGI on X</a>
+          <a href="https://sentient.ai" target="_blank">Build with Dobby</a>
+          <a href="https://fireworks.ai/docs" target="_blank">Fireworks Docs</a>
+        </div>
+        <button id="restart-btn" class="ghost">Play Again</button>
+      </section>
+    </main>
+
+    <footer class="footer">Community-owned AI • SentientAGI</footer>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>
