@@ -132,7 +132,7 @@
     'Explanation: <short>\n';
 
   async function getFromApi() {
-    if (!apiKey || apiKey === 'YOUR_API_KEY_HERE') throw new Error('No API key');
+    if (!apiKey || apiKey === 'fw_3ZU69PoJkAUMkwokbQHfch6G') throw new Error('No API key');
     const r = await fetch(URL, {
       method: 'POST',
       headers: {
@@ -167,4 +167,5 @@
     res.status(200).json(fb);
   }
 }
+
 
